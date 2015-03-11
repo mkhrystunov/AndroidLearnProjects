@@ -1,0 +1,56 @@
+<TableLayout
+    android:id="@+id/fragment_remote_control_tableLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/remote_background"
+    android:stretchColumns="*"
+    tools:context=".RemoteControl">
+
+    <TextView
+        android:id="@+id/fragment_remote_control_selectedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/window_patch"
+        android:gravity="center_horizontal"
+        android:text="0"
+        android:textColor="#ffffff"
+        android:textSize="50dp"/>
+
+    <TextView
+        android:id="@+id/fragment_remote_control_workingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:layout_weight="2"
+        android:background="@drawable/bar_patch"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="20dp"/>
+
+    <include
+        layout="@layout/button_row"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <include
+        layout="@layout/button_row"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <include
+        layout="@layout/button_row"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <include
+        layout="@layout/button_row"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</TableLayout>
